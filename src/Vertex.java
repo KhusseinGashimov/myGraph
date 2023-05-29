@@ -29,4 +29,18 @@ public class Vertex<V>{
         }
         return neighbours;
     }
+
+    public boolean hasEdge(Vertex<V> destination){
+        if(adjacentVertices.containsKey(destination)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+
+
+    public double getEdgeWeight(Vertex<V> neighbor) {
+        return adjacentVertices.get(neighbor);
+    }
 }
