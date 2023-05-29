@@ -21,4 +21,12 @@ public class Vertex<V>{
     public V getData(){
         return data;
     }
+
+    public List<Vertex<V>> getNeighbours(){ // to get all the vertices that are connected to this
+        ArrayList<Vertex<V>> neighbours = new ArrayList<>(); // vertices are stores in ArrayList before returning
+        for(Vertex<V> vertex: adjacentVertices.keySet()){
+            neighbours.add(vertex);
+        }
+        return neighbours;
+    }
 }
