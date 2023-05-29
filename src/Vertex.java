@@ -17,4 +17,8 @@ public class Vertex<V>{
     public void removeAdjacentVertex(Vertex<V> destination){
         adjacentVertices.remove(destination);
     }
+
+    public V getData(){
+        return data;
+    }
 }
