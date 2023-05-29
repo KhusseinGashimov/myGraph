@@ -10,4 +10,11 @@ public class Vertex<V>{
         this.data = data;
         adjacentVertices = new HashMap<>();
     }
+    public void addAdjacentVertex(Vertex<V> destination, double weight){ // to add new connection
+        adjacentVertices.put(destination, weight);
+    }
+
+    public void removeAdjacentVertex(Vertex<V> destination){
+        adjacentVertices.remove(destination);
+    }
 }
